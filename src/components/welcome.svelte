@@ -6,7 +6,7 @@
 	let loaded = false;
 	let animating = true;
 
-	let phrase = 'Welcome to ksheldon.dev';
+	let phrase = 'ksheldon.dev';
 	let typedChars = '';
 	let index = 0;
 	let typeWriter: number;

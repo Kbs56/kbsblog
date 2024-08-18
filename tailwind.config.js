@@ -2,5 +2,8 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {},
-	plugins: [require('daisyui')]
+	plugins: [require('daisyui')],
+	daisyui: {
+		themes: ['sunset']
+	}
 };
