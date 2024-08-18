@@ -1,6 +1,6 @@
 <script>
-	import { GitGraph } from 'lucide-svelte';
-	import { SearchSlash } from 'lucide-svelte';
+	import { FileText } from 'lucide-svelte';
+	import { GithubIcon } from 'lucide-svelte';
 </script>
 
 <nav>
@@ -10,8 +10,8 @@
 		</div>
 		<div class="flex-none">
 			<ul class="menu menu-horizontal px-1">
-				<li><a href="/about">About<SearchSlash /></a></li>
-				<li><a href="https://github.com/Kbs56" target="_blank">Github<GitGraph /></a></li>
+				<li><a href="/resume">Resume<FileText /></a></li>
+				<li><a href="https://github.com/Kbs56" target="_blank">Github<GithubIcon /></a></li>
 				<!-- <li> -->
 				<!-- 	<details> -->
 				<!-- 		<summary>Parent</summary> -->

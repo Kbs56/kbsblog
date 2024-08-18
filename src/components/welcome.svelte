@@ -1,5 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { navigating } from '$app/stores';
+
+	let animate = !$navigating;
+	let loaded = false;
+	let animating = true;
 
 	let phrase = 'Welcome to ksheldon.dev';
 	let typedChars = '';
@@ -27,6 +32,7 @@
 			subIndex += 1;
 		} else {
 			clearInterval(subTypeWriter);
+			animating = false;
 		}
 	};
 
@@ -36,17 +42,41 @@
 				typeChars(() => {
 					subTypeWriter = subTyping();
 				}),
-			100
+			80
 		);
 
 	const subTyping = () => setInterval(typeSubChars, 60);
 
 	onMount(() => {
 		typeWriter = typing();
+		loaded = true;
 	});
 </script>
 
-<div class="flex flex-col mt-36 h-auto">
-	<h1 class="font-mono text-6xl flex justify-center mb-8">{typedChars}</h1>
-	<h1 class="font-mono text-2xl flex justify-center">{subTypedChars}</h1>
-</div>
+{#if animate}
+	{#if loaded}
+		<div class="flex flex-col mt-36 h-auto pb-16">
+			<h1 class="font-mono text-6xl flex justify-center mb-8">{typedChars}</h1>
+			<h1 class="font-mono text-2xl flex justify-center">{subTypedChars}</h1>
+		</div>
+		<div class="flex justify-center gap-6">
+			{#if animating}
+				<progress class="progress w-56"></progress>
+			{:else}
+				<a role="button" class="btn btn-wide" href="/about">About Me</a>
+				<a role="button" class="btn btn-wide" href="/">Blog</a>
+			{/if}
+		</div>
+	{/if}
+{:else}
+	<div class="flex flex-col mt-36 pb-16 h-auto">
+		<h1 class="font-mono text-6xl flex justify-center mb-8">Welcome to ksheldon.dev</h1>
+		<h1 class="font-mono text-2xl flex justify-center">
+			A blog, portfolio, and knowledge sharing site.
+		</h1>
+	</div>
+	<div class="flex justify-center gap-6">
+		<a role="button" class="btn btn-wide" href="/about">About Me</a>
+		<a role="button" class="btn btn-wide" href="/">Blog</a>
+	</div>
+{/if}
