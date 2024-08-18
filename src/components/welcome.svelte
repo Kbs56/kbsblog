@@ -46,7 +46,7 @@
 	});
 </script>
 
-<div class="bg-red flex flex-col pt-56">
+<div class="flex flex-col pt-56">
 	<h1 class="font-mono text-6xl flex justify-center mb-8">{typedChars}</h1>
 	<h1 class="font-mono text-2xl flex justify-center">{subTypedChars}</h1>
 </div>
