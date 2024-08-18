@@ -6,7 +6,7 @@
 	let index = 0;
 	let typeWriter: number;
 
-	let subPhrase = 'A blog, portfolio and knowledge sharing site.';
+	let subPhrase = 'A blog, portfolio, and knowledge sharing site.';
 	let subTypedChars = '';
 	let subIndex = 0;
 	let subTypeWriter: number;
@@ -39,12 +39,14 @@
 			100
 		);
 
-	const subTyping = () => setInterval(typeSubChars, 70);
+	const subTyping = () => setInterval(typeSubChars, 60);
 
 	onMount(() => {
 		typeWriter = typing();
 	});
 </script>
 
-<h1 class="text-6xl flex justify-center pt-56">{typedChars}</h1>
-<h1 class="text-sm flex justify-center pt-12">{subTypedChars}</h1>
+<div class="bg-red flex flex-col pt-56">
+	<h1 class="font-mono text-6xl flex justify-center mb-8">{typedChars}</h1>
+	<h1 class="font-mono text-2xl flex justify-center">{subTypedChars}</h1>
+</div>
