@@ -1,5 +1,5 @@
 <script>
-	import { Github } from 'lucide-svelte';
+	import { GitGraph } from 'lucide-svelte';
 	import { SearchSlash } from 'lucide-svelte';
 </script>
 
@@ -11,7 +11,7 @@
 		<div class="flex-none">
 			<ul class="menu menu-horizontal px-1">
 				<li><a href="/about">About<SearchSlash /></a></li>
-				<li><a href="https://github.com/Kbs56" target="_blank">Github<Github /></a></li>
+				<li><a href="https://github.com/Kbs56" target="_blank">Github<GitGraph /></a></li>
 				<!-- <li> -->
 				<!-- 	<details> -->
 				<!-- 		<summary>Parent</summary> -->
