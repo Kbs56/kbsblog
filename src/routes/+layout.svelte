@@ -5,5 +5,7 @@
 </script>
 
 <Header />
-<slot />
+<main class="pt-24 max-w-5xl mx-auto">
+	<slot />
+</main>
 <Footer />
