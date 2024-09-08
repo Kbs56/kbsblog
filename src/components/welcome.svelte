@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { navigating } from '$app/stores';
+	import BlogCard from './blogCard.svelte';
 
 	let animate = !$navigating;
 	let loaded = false;
 	let animating = true;
 
-	let phrase = 'ksheldon.dev';
+	let phrase = 'ksheldon.tech';
 	let typedChars = '';
 	let index = 0;
 	let typeWriter: number;
@@ -55,28 +56,64 @@
 
 {#if animate}
 	{#if loaded}
-		<div class="flex flex-col mt-36 h-auto pb-16">
-			<h1 class="font-mono text-6xl flex justify-center mb-8">{typedChars}</h1>
-			<h1 class="font-mono text-2xl flex justify-center">{subTypedChars}</h1>
+		<div class="flex flex-col mt-12 md:mt-36 h-auto pb-8 md:pb-16 sm:pb-2 px-2">
+			<h1 class="font-mono text-4xl md:text-6xl text-center mb-4 md:mb-8">{typedChars}</h1>
+			<h2 class="font-mono text-xl md:text-2xl text-center">{subTypedChars}</h2>
 		</div>
-		<div class="flex justify-center gap-6">
+		<div class="flex flex-col md:flex-row justify-center items-center gap-4">
 			{#if animating}
-				<progress class="progress w-56"></progress>
+				<progress class="progress w-40 md:w-56"></progress>
 			{:else}
 				<a role="button" class="btn btn-wide" href="/about">About Me</a>
-				<a role="button" class="btn btn-wide" href="/">Blog</a>
+				<a role="button" class="btn btn-wide" href="/blog">Blog</a>
 			{/if}
 		</div>
+		{#if !animating}
+			<div class="container mx-auto mt-8 md:mt-12">
+				<div
+					class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-center px-4 pb-4"
+				>
+					<BlogCard
+						title={'This is a title'}
+						summary={'This is a description This is a description This is a description This is a description This is a description This is a description This is a description This is a description This is a description This is a description This is a description'}
+					/>
+					<BlogCard title={'This is a title'} summary={'This is a description'} />
+					<BlogCard title={'This is a title'} summary={'This is a description'} />
+					<BlogCard title={'This is a title'} summary={'This is a description'} />
+					<BlogCard title={'This is a title'} summary={'This is a description'} />
+					<BlogCard title={'This is a title'} summary={'This is a description'} />
+					<BlogCard title={'This is a title'} summary={'This is a description'} />
+					<BlogCard title={'This is a title'} summary={'This is a description'} />
+				</div>
+			</div>
+		{/if}
 	{/if}
 {:else}
-	<div class="flex flex-col mt-36 pb-16 h-auto">
-		<h1 class="font-mono text-6xl flex justify-center mb-8">Welcome to ksheldon.dev</h1>
-		<h1 class="font-mono text-2xl flex justify-center">
+	<div class="flex flex-col mt-12 md:mt-36 h-auto pb-8 md:pb-16 sm:pb-2 px-2">
+		<h1 class="font-mono text-4xl md:text-6xl text-center mb-4 md:mb-8">ksheldon.tech</h1>
+		<h2 class="font-mono text-xl md:text-2xl text-center">
 			A blog, portfolio, and knowledge sharing site.
-		</h1>
+		</h2>
 	</div>
-	<div class="flex justify-center gap-6">
+	<div class="flex flex-col md:flex-row justify-center items-center gap-4">
 		<a role="button" class="btn btn-wide" href="/about">About Me</a>
-		<a role="button" class="btn btn-wide" href="/">Blog</a>
+		<a role="button" class="btn btn-wide" href="/blog">Blog</a>
+	</div>
+	<div class="container mx-auto mt-8 md:mt-12">
+		<div
+			class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-center px-4 pb-4"
+		>
+			<BlogCard
+				title={'This is a title'}
+				summary={'This is a description This is a description This is a description This is a description This is a description This is a description This is a description This is a description This is a description This is a description This is a description'}
+			/>
+			<BlogCard title={'This is a title'} summary={'This is a description'} />
+			<BlogCard title={'This is a title'} summary={'This is a description'} />
+			<BlogCard title={'This is a title'} summary={'This is a description'} />
+			<BlogCard title={'This is a title'} summary={'This is a description'} />
+			<BlogCard title={'This is a title'} summary={'This is a description'} />
+			<BlogCard title={'This is a title'} summary={'This is a description'} />
+			<BlogCard title={'This is a title'} summary={'This is a description'} />
+		</div>
 	</div>
 {/if}

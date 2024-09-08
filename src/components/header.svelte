@@ -6,21 +6,12 @@
 <nav>
 	<div class="navbar bg-base-100">
 		<div class="flex-1">
-			<a class="btn btn-ghost text-xl" href="/">ksheldon.dev</a>
+			<a class="btn btn-ghost text-xl" href="/">ksheldon.tech</a>
 		</div>
 		<div class="flex-none">
 			<ul class="menu menu-horizontal px-1">
 				<li><a href="/resume">Resume<FileText /></a></li>
 				<li><a href="https://github.com/Kbs56" target="_blank">Github<GithubIcon /></a></li>
-				<!-- <li> -->
-				<!-- 	<details> -->
-				<!-- 		<summary>Parent</summary> -->
-				<!-- 		<ul class="bg-base-100 rounded-t-none p-2"> -->
-				<!-- 			<li><a href="https://github.com/Kbs56">Github</a></li> -->
-				<!-- 			<li><a href="/linkedin">Linkedin</a></li> -->
-				<!-- 		</ul> -->
-				<!-- 	</details> -->
-				<!-- </li> -->
 			</ul>
 		</div>
 	</div>
