@@ -39,6 +39,7 @@
 		"@fontsource/jetbrains-mono": "^5.0.22",
 		"clsx": "^2.1.1",
 		"lucide-svelte": "^0.428.0",
+		"shiki": "^1.16.2",
 		"svelte-inview": "^4.0.2",
 		"svelte-motion": "^0.12.2",
 		"tailwind-merge": "^2.5.2"

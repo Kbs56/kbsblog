@@ -62,7 +62,7 @@
 
 {#if animate}
 	{#if loaded}
-		<div class="flex flex-col mt-12 md:mt-36 h-auto pb-8 md:pb-16 sm:pb-2 px-2">
+		<div class="flex flex-col mt-8 md:mt-32 h-auto pb-8 md:pb-16 sm:pb-2 px-2">
 			<h1 class="font-mono text-4xl md:text-6xl text-center mb-4 md:mb-8">{typedChars}</h1>
 			<h2 class="font-mono text-xl md:text-2xl text-center">{subTypedChars}</h2>
 		</div>
