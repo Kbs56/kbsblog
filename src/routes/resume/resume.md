@@ -4,10 +4,13 @@ description: Kenny Sheldon Resume
 published: true
 ---
 
-# Resume
+### Kenny Sheldon
 
-## Kenny Sheldon
+### kenny@ksheldon.tech
 
-## kenny@ksheldon.tech
+### [Linkedin](https://www.linkedin.com/in/kbs56/)
 
-testing
+### [X](https://x.com/KDev566)
+
+<br>
+Resume...
