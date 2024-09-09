@@ -7,8 +7,7 @@
 	export let date;
 </script>
 
-<a href="/{link}"
-	>{title}>
+<a href="/{link}">
 	<div
 		class="min-w-72 min-h-72 rounded-xl border border-slate-400 bg-none hover:bg-black/10 relative"
 		role="button"
