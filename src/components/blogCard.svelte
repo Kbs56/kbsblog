@@ -10,10 +10,6 @@
 <a href="/{link}">
 	<div
 		class="min-w-72 min-h-72 rounded-xl border border-slate-400 bg-none hover:bg-black/10 relative"
-		role="button"
-		tabindex="0"
-		on:keydown={() => console.log('Hello')}
-		on:click={() => console.log('Hello')}
 	>
 		<div class="pl-4 pt-4 text-3xl">{title}</div>
 		<div class="pt-6 px-4 pb-4">{formatDate(date)}</div>
