@@ -6,3 +6,4 @@
 - [ ] Add click to download resume functionality
 - [ ] Add copy code buttons to any code blocks in md
 - [ ] Limit # of posts on home page eventually (6)
+- [ ] Hover animations on blog cards
