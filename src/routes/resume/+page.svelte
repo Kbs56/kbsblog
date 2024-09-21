@@ -8,10 +8,6 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<div class="text-center mb-4">
-	<button class="btn" on:click={() => console.log('Download')}>Download a Copy!</button>
-</div>
-
 <article>
 	<div class="prose py-4 px-4">
 		<hgroup>

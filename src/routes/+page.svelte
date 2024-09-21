@@ -62,7 +62,7 @@
 
 {#if animate}
 	{#if loaded}
-		<div class="flex flex-col mt-8 md:mt-32 h-auto pb-8 md:pb-16 sm:pb-2 px-2">
+		<div class="flex flex-col mt-6 md:mt-6 h-auto pb-6 md:pb-8 sm:pb-2 px-2">
 			<h1 class="font-mono text-4xl md:text-6xl text-center mb-4 md:mb-8">{typedChars}</h1>
 			<h2 class="font-mono text-xl md:text-2xl text-center">{subTypedChars}</h2>
 		</div>
@@ -75,7 +75,7 @@
 			{/if}
 		</div>
 		{#if !animating}
-			<div class="container mx-auto mt-8 md:mt-12">
+			<div class="container mx-auto mt-6 md:mt-12">
 				<div
 					class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-center px-4 pb-4"
 				>
@@ -92,17 +92,17 @@
 		{/if}
 	{/if}
 {:else}
-	<div class="flex flex-col mt-12 md:mt-36 h-auto pb-8 md:pb-16 sm:pb-2 px-2">
+	<div class="flex flex-col mt-6 md:mt-6 h-auto pb-6 md:pb-8 sm:pb-2 px-2">
 		<h1 class="font-mono text-4xl md:text-6xl text-center mb-4 md:mb-8">ksheldon.tech</h1>
 		<h2 class="font-mono text-xl md:text-2xl text-center">
 			A blog, portfolio, and knowledge sharing site.
 		</h2>
 	</div>
-	<div class="flex flex-col md:flex-row justify-center items-center gap-4">
+	<div class="flex flex-col md:flex-row justify-center items-center gap-4 overscroll-none">
 		<a role="button" class="btn btn-wide" href="/about">About Me</a>
 		<a role="button" class="btn btn-wide" href="/blog">Blog</a>
 	</div>
-	<div class="container mx-auto mt-8 md:mt-12">
+	<div class="container mx-auto mt-6 md:mt-12">
 		<div
 			class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-center px-4 pb-4"
 		>
